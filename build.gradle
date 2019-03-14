@@ -1,18 +1,14 @@
 buildscript {
     repositories {
+        google()
         jcenter()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.3.2'
     }
 }
 
 allprojects {
-
     if (rootProject.name.equalsIgnoreCase('spotify-sdk') && project.projectDir.name.endsWith('-sample')) {
         Properties props = new Properties()
         File propsFile = new File("${project.projectDir}/gradle.properties")
@@ -33,11 +29,8 @@ allprojects {
     }
 
     repositories {
+        google()
         jcenter()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
     }
 }
 
