@@ -14,7 +14,6 @@ allprojects {
         File propsFile = new File("${project.projectDir}/gradle.properties")
 
         ['androidCompileSdk',
-         'androidBuildTools',
          'androidMinSdk',
          'androidTargetSdk',
          getVersionName(project.projectDir.name),

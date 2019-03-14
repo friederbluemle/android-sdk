@@ -23,8 +23,6 @@ description = 'Public App Remote SDK demo app'
 apply plugin: 'com.android.application'
 
 android {
-
-    buildToolsVersion androidBuildTools
     compileSdkVersion androidCompileSdk.toString().toInteger()
 
     signingConfigs {

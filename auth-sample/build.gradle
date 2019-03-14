@@ -22,8 +22,6 @@
 apply plugin: 'com.android.application'
 
 android {
-
-    buildToolsVersion androidBuildTools
     compileSdkVersion androidCompileSdk.toString().toInteger()
 
     defaultConfig {
